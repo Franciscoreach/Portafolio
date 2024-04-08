@@ -1,0 +1,332 @@
+{% extends 'base.html' %}
+
+{% block title %} Sobre mí {% endblock %}
+
+{% block content %}
+    {% load static %}
+    <script src="{% static 'js/about.js' %}"></script>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/timeline.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/contact.css' %}" />
+    
+
+    <body id="iitv">
+        <header class="header-banner" id="icak">
+          <div class="container-width">
+            <div class="logo-container">
+            </div>     
+            <nav class="menu">
+              <a href="#contacto" class="menu-item">CONTÁCTAME</a>
+              <a href="#proyectos" class="menu-item">PROYECTOS</a>
+              <a href="#sobre-mi" class="menu-item">SOBRE MÍ</a>
+              <a href="{% url 'home' %}" class="menu-item">INICIO</a>
+            </nav>            
+            <div class="clearfix">
+            </div>
+            <div class="lead-title" id="typed-text">
+            </div>
+            <div class="sub-lead-title"><span class="highlight">Programador Full Stack</span> con experiencia en desarrollo tanto en el backend como en el frontend.
+               Poseo habilidades básicas en diversos lenguajes de programación y me apasiona desarrollar software de manera <span class="highlight">ágil</span> y <span class="highlight">autodidacta</span>.</div>
+
+            <div class="lead-btn" > <a href="#contacto">CONTÁCTAME</a> 
+            </div>
+          </div>
+        </header>
+        <section class="flex-sect">
+          <div class="container-width">
+            <div class="flex-title" id="sobre-mi">MÁS ACERCA DE <span class="highlight2">MÍ</span>
+              <hr class="underline"> <!-- Línea horizontal -->
+            </div>
+            <section class="section about-section" id="about">
+              <div class="container">
+                  <div class="row align-items-center justify-content-around flex-row-reverse">
+                      <div class="col-lg-6">
+                          <div class="about-text">
+                              <h4 class="theme-color">¿Quién soy?</h4>
+                              <p>Soy un <span class="highlight2">programador</span> egresado a finales del año 2022 del Instituto DUOC UC de la carrera de informática,
+                                 con el tiempo me he desempeñado en diferentes roles del área TI de manera profesional, ya sea desde soporte hasta programación,
+                                 trabajando con distintas metodologías buscando un desarrollo personal tanto profesional como para tener un buen desempeño en el día a día.
+                              </p>
+                          </div>
+                      </div>
+                      <div class="col-lg-5 text-center">
+                          <div class="about-img">
+                              <img src="{% static 'images/profilefoto.jpg' %}">
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </section>
+          <br>
+
+            <!-- Línea de Tiempo -->
+            
+            <div class="container">
+                  <div class="flex-title"><span class="highlight2">Experiencia</span> Profesional
+                    <hr class="underline"> <!-- Línea horizontal -->
+                    <br>
+                  </div>
+              <div class="row">
+                  <div class="col-md-12">
+                      <div class="main-timeline8">
+                          <div class="timeline">
+                              <span class="timeline-icon"></span>
+                              <span class="year">2021</span>
+                              <div class="timeline-content">
+                                  <h3 class="title"><i class="fa-solid fa-graduation-cap"></i> | Programador Junior (Práctica Laboral)</h3>
+                                  <p class="description">
+                                    Elaboración de una página web desarrollando distintos módulos para su funcionalidad
+                                    en el BackEnd a través de NodeJS además de modificar diversas funcionalidades en el
+                                    FrontEnd de la página a través de HTML5 y JavaScript.
+                                  </p>
+                              </div>
+                          </div>
+                          <div class="timeline">
+                              <span class="timeline-icon"></span>
+                              <span class="year">2022</span>
+                              <div class="timeline-content">
+                                <h3 class="title">Práctica Profesional | <i class="fa-solid fa-graduation-cap"></i></h3>
+                                  <p class="description">
+                                    Desarollo y estudio de las tecnologías Cloud asociadas a Google. (GCP)
+                                  </p>
+                              </div>
+                          </div>
+                          <div class="timeline">
+                              <span class="timeline-icon"></span>
+                              <span class="year">2023</span>
+                              <div class="timeline-content">
+                                  <h3 class="title"><i class="fa-solid fa-computer"></i> | Operador TI - Sistemas operativos y Virtualización</h3>
+                                  <p class="description">
+                                    Monitoreo de Sistemas Operativos Windows y Linux, atendiendo solicitudes de
+                                    entidad bancaria (Banco Estado), trabajando con herramientas como VMware y Nagios
+                                    para resolver y visualizar incidentes críticos de servidores y maquinas virtuales a nivel
+                                    de Redes y Sistema Operativo.
+                                  </p>
+                              </div>
+                          </div>
+                          <div class="timeline">
+                              <span class="timeline-icon"></span>
+                              <span class="year">2024</span>
+                              <div class="timeline-content">
+                                  <h3 class="title">Ingeniero de desarollo Junior | <i class="fa-solid fa-computer"></i></h3>
+                                  <p class="description">
+                                    Desarrollo y mantenimiento de aplicaciones web (Sistema Médico) utilizando Python
+                                    Flask y JavaScript. Trabajando en equipo, colaborando en entornos ágiles y entregando
+                                    soluciones de calidad dentro de los plazos establecidos, además de utilizar
+                                    herramientas como Git para el control de versiones del código y Jira para la gestión del
+                                    proyecto.
+                                  </p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <br>
+
+
+            <div class="flex-title">Habilidades / Skills
+              <hr class="underline"> <!-- Línea horizontal -->
+            </div>
+            <div class="cards">
+              <div class="card">
+                <div class="card-header">
+                </div>
+                <div class="card-body">
+                  <div class="card-title">Python
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header ch2">
+                </div>
+                <div class="card-body">
+                  <div class="card-title">HTML
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header ch3">
+                </div>
+                <div class="card-body">
+                  <div class="card-title">CSS
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header ch4">
+                </div>
+                <div class="card-body">
+                  <div class="card-title">JavaScript
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header ch5">
+                </div>
+                <div class="card-body">
+                  <div class="card-title">Angular
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header ch6">
+                </div>
+                <div class="card-body">
+                  <div class="card-title">C#
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header ch7">
+                </div>
+                <div class="card-body">
+                  <div class="card-title">MySQL
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header ch8">
+                </div>
+                <div class="card-body">
+                  <div class="card-title">Node JS
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header ch9">
+                </div>
+                <div class="card-body">
+                  <div class="card-title">Git
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+       
+        <section class="blk-sect">
+          <div class="container-width">
+            <div class="flex-title2" id="proyectos">Proyectos
+              <hr class="underline2"> <!-- Línea horizontal -->
+            </div>
+            <div class="blk-desc">Acá podras visualizar código de distintos proyectos donde he trabajado y se han desarollo con mayor tiempo y dificultad.
+
+            </div>
+            <br><br>
+
+            
+
+            <div class="container">
+              {% for project in projects %}
+
+              <div class="row">
+                <div class="col-md-7">
+                  <!-- Imagenes 700 x 300 -->
+                  <img class="img-fluid rounded mb-3 mb-md-0 img-right" src="{{project.image.url}}" style="width: 700px; height: 300px;">
+                </div>
+                <div class="col-md-5 text-project">
+                  <h3 class="title-project-card">{{ project.title }}</h3>
+                  <p>{{ project.description }}</p>
+                  <br>
+                  <a class="btn btn-primary project-btn" href="{{ project.link }}">Más información</a>
+                </div>
+              </div>
+              <br>
+              {% endfor %}
+            </div>
+
+            <br>
+          <hr class="underline2"> <!-- Línea horizontal -->
+          <div class="flex-title2"> Estudios Personales
+            <hr class="underline2"> <!-- Línea horizontal -->
+          </div>
+          <div class="blk-desc">Acá podras visualizar código de distintos proyectos donde he trabajado o estoy estudiando en ellos para aprendar más del lenguaje de programación.
+          </div>
+
+          <br><br>
+          <div class="container">
+            {% for study in studys %}
+
+            <div class="row">
+              <div class="col-md-7">
+                <!-- Imagenes 700 x 300 -->
+                <img class="img-fluid rounded mb-3 mb-md-0 img-right" src="{{study.image.url}}" style="width: 700px; height: 300px;">
+
+
+              </div>
+              <div class="col-md-5 text-project">
+                <h3 class="title-project-card">{{ study.title }}</h3>
+                <p>{{ study.description }}</p>
+                <br>
+                <a class="btn btn-primary project-btn" href="{{ study.link }}">Más información</a>
+              </div>
+            </div>
+            <br>
+            {% endfor %}
+        
+        
+          </div>
+
+          </div>
+          
+
+
+        </section>
+        <section class="bdg-sect" id="i2c0xx">
+          <div class="container-width">
+            <div class="flex-title" id="contacto">Contáctame
+              <hr class="underline"> <!-- Línea horizontal -->
+            </div>
+            
+            <section class="section about-section gray-bg" id="about">
+              <div class="container">
+                  <div class="row align-items-center justify-content-around flex-row-reverse">
+                      <div class="col-lg-6">
+                          <div class="about-text">
+                              <h4 class="theme-color">Datos Personales</h4>
+                              <p>Si tienes alguna duda, consulta o sugerencia de más profundidad puedas revisar mis datos para contactarme a la brevedad.</p>
+                              <ul class="personal-details-list">
+                                <li><strong><i class="fa-solid fa-user"></i> | Nombre:</strong> Francisco Clavería</li>
+                                <li><strong><i class="fa-solid fa-earth-americas"></i> | País:</strong> Chile / Santiago</li>
+                                <li><strong><i class="fa-solid fa-envelope"></i> | Email:</strong> francisco_claveria_aguila@hotmail.com</li>
+                                <li><strong><i class="fa-solid fa-phone"></i> | Teléfono:</strong> +(56) 963486564</li>
+                              </ul>
+                              <br>
+                              <div class="btn-bar">
+                                  <a class="px-btn theme" href="{% url 'download_pdf' %}">Descargar CV</a>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-lg-5 text-center">
+                          <div class="about-img">
+                              <img src="{% static 'images/contactfoto.jpg' %}">
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </section>
+
+
+
+          </div>
+        </section>
+
+        
+        <button id="scrollToTopBtn" title="Ir al inicio">↑</button>
+
+        <footer class="footer-under" id="iqj84u">
+          <div class="container-width">
+          </div>
+          <div class="copyright" id="ihoj09">
+            <div class="container-width">
+              <div class="made-with">
+                Desarrollado por Francisco Clavería || 2024 || Desarrollado con Django
+              </div>
+            </div>
+          </div>
+        </footer>
+      </body>
+
+{% endblock %}
+

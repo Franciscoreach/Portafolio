@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+
+{% block title %} Inicio {% endblock %}
+
+{% block content %}
+    {% load static %}
+    <body class="inicio-pagina">
+        <div class="container">
+            <div class="row">
+                <div class="col texto-centrado">
+                    <h2>¡SALUDOS!</h2>
+                    <h1>Soy Francisco Clavería Águila</h1>
+                    <h3>FULL STACK | WEB | BACKEND</h3>
+                    <br>
+                    <a class="btn btn-transparente btn-lg" href="{% url 'about-me' %}">MÁS ACERCA DE MÍ</a> 
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div class="redes-sociales">
+                <a href="https://www.linkedin.com/in/francisco-claveria-aguila" class="red-social"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/Franciscoreach" class="red-social"><i class="fab fa-github"></i></a>
+                <a href="#" class="red-social"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="red-social"><i class="fab fa-instagram"></i></a>
+            </div>
+        </footer>
+                
+
+    </body>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var h3Element = document.querySelector('.texto-centrado h3');
+            var texts = ['FULL STACK', 'WEB', 'BACKEND']; 
+            var index = 0; 
+    
+            setInterval(function() {
+                h3Element.textContent = texts[index++ % texts.length];
+            }, 2000);
+        });
+    </script>
+    
+     
+{% endblock %}
